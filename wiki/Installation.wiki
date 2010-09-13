@@ -1,10 +1,13 @@
  Installation Instructions:
  --------------------------
  
- 1. Download the extension
- 2. Unzip the file contents
- 3. Upload the LivechatWidget.php file to the extensions folder located under   WebRoot/protected/extensions/livechat/.
- 4. Upload the assets folder inside the livechat extension folder as such WebRoot/protected/extensions/livechat/assets/.
+ *  Download the extension
+
+ *  Unzip the file contents
+
+ *  Upload the LivechatWidget.php file to the extensions folder located under   WebRoot/protected/extensions/livechat/.
+
+ *  Upload the assets folder inside the livechat extension folder as such WebRoot/protected/extensions/livechat/assets/.
 
  Requirements:
  -------------
@@ -28,8 +31,12 @@ $this->widget('application.extensions.livechat.LivechatWidget',
 		));
 }}}
 
-* display_type options are statusicon (shows statusicon and hyperlink) hyperlink(shows hyperlink) custom is a custom stylesheet in /css/and the url (the url).
-* link_title specifies the link text on other than default display. 
-* link_text specifies the link text on other than default display. 
-* badge_on_away shows the chat badge when status is away
-* always_show_badge always shows th badge regardless of status
+ display_type options are statusicon (shows statusicon and hyperlink) hyperlink(shows hyperlink) custom is a custom stylesheet in /css/and the url (the url).
+
+* link_title * specifies the link text on other than default display. 
+
+* link_text * specifies the link text on other than default display. 
+
+* badge_on_away * shows the chat badge when status is away
+
+* always_show_badge * always shows th badge regardless of status
