@@ -1,0 +1,35 @@
+ Installation Instructions:
+ --------------------------
+ 
+ 1. Download the extension
+ 2. Unzip the file contents
+ 3. Upload the LivechatWidget.php file to the extensions folder located under   WebRoot/protected/extensions/livechat/.
+ 4. Upload the assets folder inside the livechat extension folder as such WebRoot/protected/extensions/livechat/assets/.
+
+ Requirements:
+ -------------
+ 
+ This should work on all Yii versions, But was tested on version 1.1.4 .
+
+ Usage:
+ ---------------
+ You will first need to generate a badge if you plan on using google talk. get a badge here http://www.google.com/talk/service/badge/New 
+ and click  generate/update badge.
+ your account hash will be a number that looks like tk=z01q6...&amp so select the number between the tk= and &amp this is your hash.
+{{{
+$this->widget('application.extensions.livechat.LivechatWidget', 
+ 		array(
+ 		 'account_hash' =>'xxxx',    //your account hash
+ 		 'display_type' =>'default', //statusicon/hyperlink/url/custom/default
+ 		 'link_title' =>'Title of your Link', //link title
+ 		 'link_text' =>'Text of your Link', //link text 
+		 'always_show_badge' =>'1', //we always show the badge even if away/offline 
+		 'badge_on_away' =>'1', //we show badge on online and away only (not offline) 
+		));
+}}}
+
+* display_type options are statusicon (shows statusicon and hyperlink) hyperlink(shows hyperlink) custom is a custom stylesheet in /css/and the url (the url).
+* link_title specifies the link text on other than default display. 
+* link_text specifies the link text on other than default display. 
+* badge_on_away shows the chat badge when status is away
+* always_show_badge always shows th badge regardless of status
