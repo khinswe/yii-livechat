@@ -31,7 +31,7 @@ $this->widget('application.extensions.livechat.LivechatWidget',
 		));
 }}}
 
-* display_type * options are statusicon (shows statusicon and hyperlink) hyperlink(shows hyperlink) custom is a custom stylesheet in /css/and the url (the url).
+* display_type * options are statusicon (shows statusicon and hyperlink), hyperlink(shows hyperlink only), custom (displays custom stylesheet), url (shows the url(no formatting)).
 
 * link_title * specifies the link text on other than default display. 
 
